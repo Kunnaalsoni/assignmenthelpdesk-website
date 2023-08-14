@@ -1,0 +1,21 @@
+
+# if use Localhost then use this code
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Html any server 
+
+# RewriteEngine on 
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.html -f
+# RewriteRule ^(.*)$ $1.html [NC,L]
+
+
+# Php any server 
+
+# RewriteEngine on
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# RewriteRule ^(.*)$ $1.php [NC,L] 
